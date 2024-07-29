@@ -1,0 +1,21 @@
+1- paymentgate way : 1- stripe : steps 1-for guest 
+
+//steps
+
+//paymentIntObject create payment intent(amount, currency)
+
+//init payment sheet (paymentIntentClientSecret)
+
+//show payment sheet(await Stripe.instance.presentPaymentSheet();)
+
+2- for customer to save his card 
+
+//paymentIntObject create payment intent(amount, currency, customerId)
+
+// to know if user has card or not and to save card
+
+//create EphemeralKey(customerId)
+
+//init payment sheet (merchant,paymentIntentClientSecret, customerId, customerEphemeralKey)
+
+//show payment sheet(await Stripe.instance.presentPaymentSheet();)
